@@ -1,0 +1,43 @@
+{
+  "name": "game-center",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "electron:dev": "cross-env NODE_ENV=development concurrently \"vite\" \"electron .\"",
+    "electron:build": "tsc && vite build && electron-builder"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.7.1",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@nextui-org/react": "^2.6.3",
+    "antd": "^5.22.2",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "framer-motion": "^11.13.1",
+    "keras-js": "^1.0.3",
+    "openai": "^4.76.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^24.0.0",
+    "electron-builder": "^24.0.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9"
+  },
+  "main": "electron/main.js"
+}
